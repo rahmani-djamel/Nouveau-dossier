@@ -42,18 +42,44 @@
 
 
 
-    <nav class="bg-white border border-b-gray-200  ">
-        <div class="flex flex-wrap justify-center items-center mx-auto max-w-screen-xl p-4">
-            <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="images/Bright_Brand-logo.png" class="h-8" alt="brand Logo" />
-            </a>
 
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="images/Bright_Brand-logo.png" class="h-8" alt="brand Logo" />
+
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">التسجيل</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">تسجيل الدخول</a>
+              </li>
+         
+            </ul>
+          </div>
         </div>
-    </nav>
-
+      </nav>
+      
     <!-- component -->
     <div class="h-full px-4  container mx-auto    mt-4   justify-center     max-w-7xl">
-        <div class="bg-white rounded-lg shadow-xl ">
+            <div class="bg-white rounded-lg shadow-xl ">
+
+                    <div class="w-full  overflow-hidden">
+                        <img src="images/pub-saoudia.jpg" class="w-full h-full rounded-tl-lg rounded-lg  ">
+                    </div>
+        
+                </div>
+        <div class="bg-white rounded-lg shadow-xl mt-4  ">
 
             <div class="w-full h-[250px] md:h-[500px] lg:h-[500px] overflow-hidden">
                 <img src="images/saudia-social-card-02.jpg" class="w-full h-full rounded-tl-lg rounded-lg hover:scale-125 transition-all duration-500 cursor-pointer">
@@ -61,10 +87,11 @@
 
         </div>
         <div class="flex-1 bg-white rounded-lg shadow-xl mt-4 p-8  " data-aos="fade-up" data-aos-anchor-placement="top-center">
+
             <h4 class="text-xl text-gray-900 font-bold">
                 <span class="animate-ping absolute inline-flex w-3.5 h-3.5 rounded-full bg-sky-400 opacity-80 "></span>
 
-                <span class="mr-6"> متى تأسست السعودية لطيران؟ </span>
+                <span class="mr-6"> كيف أحصل على وظيفة في الشركة ؟ </span>
 
             </h4>
             <h4 class="text-l text-gray-700 font-bold">الاختيارات :</h4>
@@ -80,7 +107,7 @@
                     <div class="flex items-center w-11/12">
 
                         <input checked id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">1945</label>
+                        <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">الاختيار الاول</label>
 
                     </div>
                 </div>
@@ -94,7 +121,7 @@
                     <div class="flex items-center w-11/12">
 
                         <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">1970</label>
+                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> الاختيار الثاني</label>
 
                     </div>
                 </div>
@@ -107,7 +134,21 @@
                     <div class="flex items-center w-11/12">
 
                         <input checked id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="default-radio-3" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">1986</label>
+                        <label for="default-radio-3" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> الاختيار الثالث</label>
+
+                    </div>
+                </div>
+                <!-- end::Timeline item -->
+
+                <!-- start::Timeline item -->
+                <div class="flex items-center w-full my-6 -mr-1.5">
+                    <div class="w-1/12 z-10">
+                        <div class="w-3.5 h-3.5 bg-sky-400 rounded-full"></div>
+                    </div>
+                    <div class="flex items-center w-11/12">
+
+                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="default-radio-4" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> الاختيار الرابع</label>
 
                     </div>
                 </div>
@@ -117,6 +158,13 @@
 
 
             </div>
+            <!-- Button choose-->
+<button type="button" class="text-white bg-sky-500 hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    تاكيد
+    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+    </svg>
+    </button>
         </div>
         <div class="justify-center text-center mx-auto mt-8" style="margin:auto">
             <span class="inline-block animate-bounce rounded-full p-4 bg-sky-400 text-white text-sm mt-10 ">
@@ -128,40 +176,58 @@
         </div>
 
         <!-- new section : two quize -->
+      
         <div class="flex flex-col  rounded-lg  mt-4    md:flex-row items-center justify-center grid gap-x-12 gap-y-16 md:grid-cols-5 lg:grid-cols-5"
             data-aos="fade-up" data-aos-anchor-placement="top-center">
-            <div class="md:col-span-3 lg:col-span-3 h-full shadow-xl">
+           
+            <div class="md:col-span-3 lg:col-span-3 h-full shadow-xl rounded-lg  bg-white border-dashed border-2 border-sky-600">
+                
                 <div class="overflow-hidden">
                     <img src="images/quize-044.jpg" alt="Featured Image 1" class="rounded-t-xl w-full h-[300px] hover:scale-125 transition-all duration-500 cursor-pointer"
                     />
 
                 </div>
-                <div class="flex-1 bg-white rounded-b-lg   p-8  ">
+                 <div class=" z-0 filter blur-2xl animate-pulse duration-500 transition     opacity-90">
+                    <div class="    flex relative">
+                      <div class="p-16 rounded-full bg-gradient-to-r from-sky-400 to-emerald-600 absolute  ">
+                  
+                      </div>
+                      <div class="p-16 left-0  rounded-full bg-gradient-to-r to-sky-700 from-emerald-900 absolute md:flex hidden">
+                  
+                      </div>
+                      <!--<span class="right-[50%] absolute inline-flex p-10  bg-gradient-to-r from-green-500 via-blue-500 to-sky-500 rounded-full mix-blend-multiply filter blur-xl animate-blob "></span>
+                      <span class="right-0 absolute inline-flex p-16  bg-gradient-to-r from-green-500 via-blue-500 to-sky-500 rounded-full mix-blend-multiply filter blur-xl animate-blob opacity-50"></span>
+                      -->
+                    </div>
+                   </div>
+                  
+                <div class="z-10 flex-1 bg-white rounded-b-lg   p-8  ">
                     <h4 class="text-xl text-gray-900 font-bold mb-5">
-                        <span class="animate-ping absolute inline-flex w-3.5 h-3.5 rounded-full bg-sky-400 opacity-80 "></span>
+                        <span class="animate-ping absolute inline-flex w-3.5 h-3.5 rounded-full bg-sky-400   "></span>
 
                         <span class="mr-6">هذا السؤال سيتم عرضه غدا </span>
 
                     </h4>
-                    <h4 class="text-l text-gray-700 font-bold">متى تأسست السعودية لطيران؟ </h4>
+                    <h4 class="text-l text-gray-700 font-bold">كيف أحصل على وظيفة في الشركة ؟ </h4>
 
 
                 </div>
             </div>
-            <div class="md:col-span-2 lg:col-span-2 h-full shadow-xl">
+            <div class="md:col-span-2 lg:col-span-2 h-full shadow-xl  rounded-lg  border-b-4 border-orange-400 blur-[2px] hover:blur-none ">
+                  
                 <div class="overflow-hidden">
-                    <img src="images/quiz005.jpg" alt="Featured Image 1" class="rounded-t-xl w-full h-[300px] hover:scale-125 transition-all duration-500 cursor-pointer"
+                    <img src="images/quize-05.webp" alt="Featured Image 1" class="rounded-t-xl w-full h-[300px] hover:scale-125 transition-all duration-500 cursor-pointer"
                     />
 
                 </div>
                 <div class="flex-1 bg-white rounded-b-lg   p-8  ">
                     <h4 class="text-xl text-gray-900 font-bold mb-5">
-                        <span class="animate-ping absolute inline-flex w-3.5 h-3.5 rounded-full bg-sky-400 opacity-80 "></span>
+                        <span class="animate-ping absolute inline-flex w-3.5 h-3.5 rounded-full bg-orange-400 opacity-80 "></span>
 
                         <span class="mr-6">هذا السؤال سيتم عرضه بعد غد </span>
 
                     </h4>
-                    <h4 class="text-l text-gray-700 font-bold">متى تأسست السعودية لطيران؟ </h4>
+                    <h4 class="text-l text-gray-700 font-bold">كيف أحصل على وظيفة في الشركة ؟ </h4>
 
 
                 </div>
@@ -173,6 +239,9 @@
                 <ul class="swiper-wrapper my-0 list-unstyled space-x-10">
                     <li class="swiper-slide w-32 md:w-56 lg:w-56  bg-white rounded-lg p-3 shadow-xl">
                         <img class="rounded-t-lg w-32 h-32 text-center mx-auto justify-center pb-2" src="images/almarai.svg" alt="" />
+                        <div class="absolute inline-flex items-center justify-center w-10 h-10 text-xs font-bold text-white bg-green-500 border-2 border-white rounded-full -top-0 -end-2 dark:border-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M19.495 3.133a1 1 0 0 1 1.352.309l.99 1.51a1 1 0 0 1-.155 1.279l-.003.004l-.014.013l-.057.053l-.225.215a83.86 83.86 0 0 0-3.62 3.736c-2.197 2.416-4.806 5.578-6.562 8.646c-.49.856-1.687 1.04-2.397.301l-6.485-6.738a1 1 0 0 1 .051-1.436l1.96-1.768A1 1 0 0 1 5.6 9.2l3.309 2.481c5.169-5.097 8.1-7.053 10.586-8.548"/></g></svg>
+                        </div>
 
                         <div class="p-2  text-center  border border-transparent border-t-gray-200">
 
@@ -183,7 +252,9 @@
                     </li>
                     <li class="swiper-slide w-32 md:w-56 lg:w-56  bg-white rounded-lg p-3 shadow-xl">
                         <img class="rounded-t-lg w-32 h-32 text-center mx-auto justify-center pb-2" src="images/STC-01.svg" alt="" />
-
+                        <div class="absolute inline-flex items-center justify-center w-10 h-10 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-0 -end-2 dark:border-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="currentColor"><path d="M13 6h-2v1a1 1 0 1 0 2 0z"/><path fill-rule="evenodd" d="M6 2v2h1v3a5 5 0 0 0 5 5a5 5 0 0 0-5 5v3H6v2h12v-2h-1v-3a5 5 0 0 0-5-5a5 5 0 0 0 5-5V4h1V2zm3 2h6v3a3 3 0 1 1-6 0zm0 13v3h6v-3a3 3 0 1 0-6 0" clip-rule="evenodd"/></g></svg>    
+                        </div>
                         <div class="p-2  text-center  border border-transparent border-t-gray-200">
 
                             <h5 class="  text-l md:text-2xl lg:text-2xl font-bold tracking-tight text-sky-700 dark:text-white">شعار السعودية</h5>
@@ -193,7 +264,9 @@
                     </li>
                     <li class="swiper-slide w-32 md:w-56 lg:w-56  bg-white rounded-lg p-3 shadow-xl">
                         <img class="rounded-t-lg w-32 h-32 text-center mx-auto justify-center pb-2" src="images/saudi-black.png" alt="" />
-
+                        <div class="absolute inline-flex items-center justify-center w-10 h-10 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-0 -end-2 dark:border-gray-900">
+                            1 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M140 80v41.21l34.17 20.5a12 12 0 1 1-12.34 20.58l-40-24A12 12 0 0 1 116 128V80a12 12 0 0 1 24 0m84-28a12 12 0 0 0-12 12v7.37c-4.21-4.67-8.58-9.31-13.29-14.08a100 100 0 1 0-2.07 143.44a12 12 0 0 0-16.48-17.46a76 76 0 1 1 1.53-109.06C187.61 80.2 193 86 198.23 92H184a12 12 0 0 0 0 24h40a12 12 0 0 0 12-12V64a12 12 0 0 0-12-12"/></svg>
+                        </div>
                         <div class="p-2  text-center  border border-transparent border-t-gray-200">
 
                             <h5 class="  text-l md:text-2xl lg:text-2xl font-bold tracking-tight text-sky-700 dark:text-white">شعار السعودية</h5>

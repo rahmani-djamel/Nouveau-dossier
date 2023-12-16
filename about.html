@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="ar" class="light" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="description">
+    <title>Quize</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+
+
+    <style>
+        html {
+            font-family: 'Tajawal', sans-serif;
+            color: #05060F
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            color: #05060F
+        }
+    </style>
+
+
+
+
+</head>
+
+<body class=" ">
+
+    <nav class="bg-white border   dark:bg-gray-900 border-b-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="images/Bright_Brand-logo.png" class="h-8" alt="brand Logo" />
+
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                            aria-current="page">التسجيل</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">تسجيل الدخول</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="px-4  container mx-auto    mt-4   justify-center     max-w-7xl ">
+
+        <div class="flex grid grid-cols-1 md:grid-cols-2 items-center md:gap-20 border-4 border-transparent border-b-[#16284E] ">
+            <div class="  max-w-md flex flex-col justify-center ">
+                <div class="md:text-5xl text-2xl uppercase font-black text-[#16284E]">برنامج</div>
+                <p class="w-24   mt-4 h-1 w-30 bg-[#ff4d50]"></p>
+                <div class="text-xl mt-4"> برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن
+                    الطرق التسويقية التقليدية
+                </div>
+                <div class="my-5 h-16 mt-16">
+                    <button type="button" class="text-white  bg-gradient-to-r from-red-400 via-red-500 to-[#ff4d50] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        المزيد
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex md:justify-end w-full  ">
+                <div class="bg-dots  ">
+                    <div class="  z-10        ">
+
+                        <img alt="card img" class="rounded-t  " src="images/hero-03.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="px-4  container mx-auto    mt-4   justify-center     max-w-7xl ">
+            <section class="pb-10 bg-blueGray-200 -mt-24">
+                    <div class="container mx-auto px-4">
+                      <div class="flex flex-wrap">
+                        <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8  shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                              <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 384 512"><path fill="currentColor" d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85c-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58c-19.5 0-37.82-7.59-51.61-21.37M382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32c-21.07 5.64-16.45 3.18-25.12 11.85c-13.79 13.78-32.12 21.37-51.62 21.37c-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28l52.69 2.01c11.62.44 19.82-11.27 15.43-22.03M263 340c15.28-15.55 17.03-14.21 38.79-20.14c13.89-3.79 24.75-14.84 28.47-28.98c7.48-28.4 5.54-24.97 25.95-45.75c10.17-10.35 14.14-25.44 10.42-39.58c-7.47-28.38-7.48-24.42 0-52.83c3.72-14.14-.25-29.23-10.42-39.58c-20.41-20.78-18.47-17.36-25.95-45.75c-3.72-14.14-14.58-25.19-28.47-28.98c-27.88-7.61-24.52-5.62-44.95-26.41c-10.17-10.35-25-14.4-38.89-10.61c-27.87 7.6-23.98 7.61-51.9 0c-13.89-3.79-28.72.25-38.89 10.61c-20.41 20.78-17.05 18.8-44.94 26.41c-13.89 3.79-24.75 14.84-28.47 28.98c-7.47 28.39-5.54 24.97-25.95 45.75c-10.17 10.35-14.15 25.44-10.42 39.58c7.47 28.36 7.48 24.4 0 52.82c-3.72 14.14.25 29.23 10.42 39.59c20.41 20.78 18.47 17.35 25.95 45.75c3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82M97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02s-42.24 96.02-94.34 96.02s-94.34-42.99-94.34-96.02"/></svg>
+                              </div>
+                              <h6 class="text-xl font-semibold">الوكالة الحائزة على جائزة</h6>
+                              <p class="mt-2 mb-4 text-blueGray-500">
+                                    برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن الطرق التسويقية التقليدية .
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-full md:w-4/12 px-4 text-center">
+                          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8  shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                              <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full  bg-sky-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 576 512"><path fill="currentColor" d="M272 416c17.7 0 32-14.3 32-32s-14.3-32-32-32H160c-17.7 0-32-14.3-32-32V192h32c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-64-64c-12.5-12.5-32.8-12.5-45.3 0l-64 64c-9.2 9.2-11.9 22.9-6.9 34.9S19.1 192 32.1 192h32v128c0 53 43 96 96 96zm32-320c-17.7 0-32 14.3-32 32s14.3 32 32 32h112c17.7 0 32 14.3 32 32v128h-32c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l64 64c12.5 12.5 32.8 12.5 45.3 0l64-64c9.2-9.2 11.9-22.9 6.9-34.9S556.9 320 543.9 320h-32V192c0-53-43-96-96-96z"/></svg>
+                              </div>
+                              <h6 class="text-xl font-semibold">مراجعات مجانية</h6>
+                              <p class="mt-2 mb-4 text-blueGray-500">
+                                    برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن الطرق التسويقية التقليدية .
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8  shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                              <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 256 256"><path fill="currentColor" d="M160 128a224.48 224.48 0 0 1-26.37 105.54a12 12 0 1 1-21.16-11.32A200.33 200.33 0 0 0 136 128a8 8 0 0 0-16 0a12 12 0 0 1-24 0a32 32 0 0 1 64 0m-32-72a12 12 0 1 0 0 24a48.05 48.05 0 0 1 48 48c0 7.62-.36 15.32-1.07 22.87A12 12 0 0 0 185.74 164h1.14a12 12 0 0 0 11.93-10.87c.79-8.3 1.18-16.76 1.18-25.13A72.08 72.08 0 0 0 128 56M96 92.23a12 12 0 0 0-16-17.88A72.1 72.1 0 0 0 56 128a120.11 120.11 0 0 1-15.12 58.37a12 12 0 0 0 21 11.69A144.14 144.14 0 0 0 80 128a48.08 48.08 0 0 1 16-35.77m10.1 64.1a12 12 0 0 0-14.46 8.9a158.61 158.61 0 0 1-18.88 45.86a12 12 0 0 0 20.5 12.48A182.86 182.86 0 0 0 115 170.79a12 12 0 0 0-8.9-14.46m76.73 24.07a12 12 0 0 0-14.64 8.6a241.5 241.5 0 0 1-8 24.87a12 12 0 0 0 6.91 15.49a11.76 11.76 0 0 0 4.29.8a12 12 0 0 0 11.21-7.71a260.2 260.2 0 0 0 8.79-27.37a12 12 0 0 0-8.56-14.68M128 16A112.12 112.12 0 0 0 16 127.44v.57a79.81 79.81 0 0 1-5 27.82a12 12 0 1 0 22.5 8.35a103.59 103.59 0 0 0 6.5-35.6v-.57a88 88 0 0 1 176-.5v.5a282.12 282.12 0 0 1-6.74 61.38a12 12 0 0 0 9.09 14.33a11.84 11.84 0 0 0 2.65.28a12 12 0 0 0 11.7-9.38a305.87 305.87 0 0 0 7.3-66.07v-.54A112.13 112.13 0 0 0 128 16"/></svg>
+                              </div>
+                              <h6 class="text-xl font-semibold">شركة تم التحقق منها</h6>
+                              <p class="mt-2 mb-4 text-blueGray-500">
+                                    برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن الطرق التسويقية التقليدية .
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                   
+                  </section>
+</div>
+    <div class="px-4  container mx-auto   mb-16    justify-center     max-w-7xl ">
+        <!-- component -->
+        <!-- component -->
+        <section class="pt-16  rounded-lg  ">
+            <div class="px-12 mx-auto max-w-7xl">
+                <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
+                    <h1 class="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight text-center">
+                        <span>عرض جميع</span>
+                        <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#16284e] to-sky-500 lg:inline">
+                        مسابقاتنا السابقة</span>
+                    </h1>
+                    <p class="px-0 mb-8 text-lg text-gray-600 md:text-xl lg:px-24 text-center">
+                        برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن الطرق التسويقية
+                        التقليدية .
+                    </p>
+                    <div class=" mb-4 space-x-2 md:space-x-4 lg:space-x-4 md:mb-8">
+
+                        <a href="#_" class="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg bg-gray-100 rounded-2xl sm:w-auto sm:mb-0 ml-0 md:ml-16 lg:ml-16">
+                            المزيد
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </a>
+                        <a href="#_" class="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-white bg-gradient-to-r from-red-400 via-red-500 to-[#ff4d50] hover:bg-gradient-to-br rounded-2xl sm:w-auto sm:mb-0 ">
+                            المزيد
+                            <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- component -->
+
+
+
+                
+
+            </div>
+        </section>
+
+    </div>
+    <div class="bg-gray-100 p-8">
+            <div class="holder mx-auto  grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4  px-4  container mx-auto        justify-center     max-w-7xl ">
+                    <!-- CARD HERE -->
+                                        <div class="each  m-2  shadow-[0_3px_10px_rgb(0,0,0,0.2)] border-gray-800 bg-white relative rounded-lg ">
+                    
+                    
+                                            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                                <!-- Carousel wrapper -->
+                                                <div class="relative h-56 overflow-hidden  rounded-t-lg md:h-46">
+                                                    <!-- Item 1 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="images/quize-044.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 2 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="images/winner-01.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 3 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="images/winner-02.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 4 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="images/winner.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 5 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="images/alatsalat-alswdyt.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <!-- Slider indicators -->
+                                                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                                                </div>
+                                                <!-- Slider controls -->
+                                                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                                    data-carousel-prev>
+                                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 6 10">
+                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                                                        </svg>
+                                                        <span class="sr-only">Previous</span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                                    data-carousel-next>
+                                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 6 10">
+                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                                                        </svg>
+                                                        <span class="sr-only">Next</span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                    
+                    
+                                            <div class="desc p-4 text-gray-800">
+                                                <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-bold block cursor-pointer hover:underline">عنوان المسابقة</a>
+                                                <a href="https://www.youtube.com/user/sam14319" target="_new" class="badge bg-[#ff4d50] text-white rounded px-1 text-xs font-bold cursor-pointer">16/12/2023</a>
+                                                <span class="description text-sm block py-2 border-gray-400 mb-2">برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية </span>
+                                            </div>
+                                        </div>
+                                        <!-- CARD HERE -->
+                                        <div class="each  m-2  shadow-[0_3px_10px_rgb(0,0,0,0.2)] border-gray-800 bg-white relative rounded-lg ">
+                    
+                    
+                                                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                                    <!-- Carousel wrapper -->
+                                                    <div class="relative h-56 overflow-hidden  rounded-t-lg md:h-46">
+                                                        <!-- Item 1 -->
+                                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                            <img src="images/quize-044.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                        </div>
+                                                        <!-- Item 2 -->
+                                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                            <img src="images/winner-01.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                        </div>
+                                                        <!-- Item 3 -->
+                                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                            <img src="images/winner-02.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                        </div>
+                                                        <!-- Item 4 -->
+                                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                            <img src="images/winner.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                        </div>
+                                                        <!-- Item 5 -->
+                                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                            <img src="images/alatsalat-alswdyt.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                                alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slider indicators -->
+                                                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                                                    </div>
+                                                    <!-- Slider controls -->
+                                                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                                        data-carousel-prev>
+                                                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 6 10">
+                                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                                                            </svg>
+                                                            <span class="sr-only">Previous</span>
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                                        data-carousel-next>
+                                                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 6 10">
+                                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                                                            </svg>
+                                                            <span class="sr-only">Next</span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                        
+                        
+                                                <div class="desc p-4 text-gray-800">
+                                                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-bold block cursor-pointer hover:underline">عنوان المسابقة</a>
+                                                    <a href="https://www.youtube.com/user/sam14319" target="_new" class="badge bg-[#ff4d50] text-white rounded px-1 text-xs font-bold cursor-pointer">16/12/2023</a>
+                                                    <span class="description text-sm block py-2 border-gray-400 mb-2">برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية </span>
+                                                </div>
+                                            </div>
+                                            <!-- CARD HERE -->
+                                        <div class="each   m-2  shadow-[0_3px_10px_rgb(0,0,0,0.2)] border-gray-800 bg-white relative rounded-lg ">
+                    
+                    
+                                                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                                    <!-- Carousel wrapper -->
+                                                    <div class="relative h-56 overflow-hidden  rounded-t-lg md:h-46">
+                                                        <!-- Item 1 -->
+                                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                            <img src="images/quize-044.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                        </div>
+                                                        <!-- Item 2 -->
+                                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                            <img src="images/winner-01.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                        </div>
+                                                        <!-- Item 3 -->
+                                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                            <img src="images/winner-02.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                        </div>
+                                                        <!-- Item 4 -->
+                                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                            <img src="images/winner.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                        </div>
+                                                        <!-- Item 5 -->
+                                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                            <img src="images/alatsalat-alswdyt.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                                alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slider indicators -->
+                                                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                                                    </div>
+                                                    <!-- Slider controls -->
+                                                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                                        data-carousel-prev>
+                                                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 6 10">
+                                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                                                            </svg>
+                                                            <span class="sr-only">Previous</span>
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                                        data-carousel-next>
+                                                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 6 10">
+                                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                                                            </svg>
+                                                            <span class="sr-only">Next</span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                        
+                        
+                                                <div class="desc p-4 text-gray-800">
+                                                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-bold block cursor-pointer hover:underline">عنوان المسابقة</a>
+                                                    <a href="https://www.youtube.com/user/sam14319" target="_new" class="badge bg-[#ff4d50] text-white rounded px-1 text-xs font-bold cursor-pointer">16/12/2023</a>
+                                                    <span class="description text-sm block py-2 border-gray-400 mb-2">برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية </span>
+                                                </div>
+                                            </div>
+                                            <!-- CARD HERE -->
+                                        <div class="each   m-2  shadow-[0_3px_10px_rgb(0,0,0,0.2)] border-gray-800 bg-white relative rounded-lg ">
+                    
+                    
+                                            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                                <!-- Carousel wrapper -->
+                                                <div class="relative h-56 overflow-hidden  rounded-t-lg md:h-46">
+                                                    <!-- Item 1 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="images/quize-044.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 2 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="images/winner-01.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 3 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="images/winner-02.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 4 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="images/winner.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                                    </div>
+                                                    <!-- Item 5 -->
+                                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                        <img src="images/alatsalat-alswdyt.jpg" class="h-full absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                            alt="...">
+                                                    </div>
+                                                </div>
+                                                <!-- Slider indicators -->
+                                                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                                                </div>
+                                                <!-- Slider controls -->
+                                                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                                    data-carousel-prev>
+                                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 6 10">
+                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                                                        </svg>
+                                                        <span class="sr-only">Previous</span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                                    data-carousel-next>
+                                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 6 10">
+                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                                                        </svg>
+                                                        <span class="sr-only">Next</span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                    
+                    
+                                            <div class="desc p-4 text-gray-800">
+                                                <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-bold block cursor-pointer hover:underline">عنوان المسابقة</a>
+                                                <a href="https://www.youtube.com/user/sam14319" target="_new" class="badge bg-[#ff4d50] text-white rounded px-1 text-xs font-bold cursor-pointer">16/12/2023</a>
+                                                <span class="description text-sm block py-2 border-gray-400 mb-2">برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية </span>
+                                            </div>
+                                        </div>
+                                       
+                    
+                                    </div>
+
+    </div>
+    <div class="px-4  container mx-auto   mb-16 mt-16   justify-center     max-w-7xl ">
+            <div class="bg-white rounded-lg   shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-8">
+                    <div class=" items-center justify-between text-center mb-10">
+                     
+                        <h1 class=" text-xl font-extrabold leading-none tracking-normal text-gray-900 md:text-2xl md:tracking-tight text-center">
+                                <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#ff4d50] to-red-500 lg:inline">
+                                        الفائزون</span>   
+                            <span>   في مسابقاتنا السابقة</span>
+                               
+                            </h1>
+                <p class="w-24   mt-2 h-1 w-30 bg-[#ff4d50] text-center mx-auto"></p>
+
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-8 mt-8">
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection1.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection2.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection3.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection4.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection5.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection6.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection7.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection8.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection9.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection10.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection11.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection12.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection13.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection14.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection15.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                        <a href="#" class="flex flex-col items-center justify-center text-gray-800 hover:text-blue-600" title="View Profile">
+                            <img src="https://vojislavd.com/ta-template-demo/assets/img/connections/connection16.jpg" class="w-16 rounded-full">
+                            <p class="text-center font-bold text-sm mt-1">اسم الفائز</p>
+                            <p class="text-xs text-gray-500 text-center">مسابقة سعودية</p>
+                        </a>
+                    </div>
+                </div>
+</div>
+<div class="bg-gray-100">
+        <div class="px-4  container mx-auto    mt-4   justify-center     max-w-7xl bg-gray-100 ">
+                <!-- component -->
+            <div class="">
+                    <div class=" p-4   py-8 mt-12">
+                            <div class=" items-center justify-between text-center  ">
+                     
+                                    <h1 class=" text-xl font-extrabold leading-none tracking-normal text-gray-900 md:text-2xl md:tracking-tight text-center">
+                                            <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-[#ff4d50] to-red-500 lg:inline">
+                                                    التعليمات</span>   
+                                        
+                                           
+                                        </h1>
+                                <p class="w-24   mt-2 h-1 w-30 bg-[#ff4d50] text-center mx-auto"></p>
+            
+                                </div>
+                        <p class="text-center text-gray-600 text-sm mt-2">فيما يلي بعض الأسئلة المتداولة</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-12 px-2 xl:px-12 mt-4">
+                            <div class="flex space-x-8 mt-8">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-700">السؤال ?</h4>
+                                    <p class="text-gray-600 my-2">برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن الطرق التسويقية التقليدية . </p>
+                                     
+                                </div>
+                            </div>
+                            
+                            <div class="flex space-x-8 mt-8">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-700">السؤال ?</h4>
+                                    <p class="text-gray-600 my-2">برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن الطرق التسويقية التقليدية . </p>
+                                     
+                                </div>
+                            </div>
+                
+                            <div class="flex space-x-8 mt-8">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                                        </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-700">السؤال ?</h4>
+                                    <p class="text-gray-600 my-2">برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن الطرق التسويقية التقليدية . </p>
+                                     
+                                </div>
+                            </div>
+                
+                            <div class="flex space-x-8 mt-8">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-700">السؤال ?</h4>
+                                    <p class="text-gray-600 my-2">برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن الطرق التسويقية التقليدية . </p>
+                                     
+                                </div>
+                            </div>
+                
+                            <div class="flex space-x-8 mt-8">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-700">السؤال ?</h4>
+                                    <p class="text-gray-600 my-2">برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن الطرق التسويقية التقليدية . </p>
+                                        </div>
+                            </div>
+                
+                            <div class="flex space-x-8 mt-8">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-700">السؤال ?</h4>
+                                    <p class="text-gray-600 my-2">برنامج تسويقي مبتكر , خاص بالشركات و المؤسسات السعودية , لتعزيز علامتها التجارية في أذهان العملاء بعيدا عن الطرق التسويقية التقليدية . </p>
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<div class="px-4  container mx-auto        justify-center     max-w-7xl ">
+      
+        <div class="container flex flex-col mx-auto bg-white">
+            <div class="w-full draggable">
+                <div class="container flex flex-col items-center gap-16 mx-auto my-16">
+                    <div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                            <path d="M31.9904 13.965L22.4166 4.40166C21.6057 3.60976 20.5294 3.16817 19.4104 3.16817C18.2914 3.16817 17.2151 3.60976 16.4041 4.40166L6.8304 13.9017C6.40502 14.283 6.0629 14.7524 5.82645 15.279C5.58999 15.8056 5.46454 16.3776 5.45831 16.9575V30.5425C5.47456 31.6946 5.93476 32.793 6.73808 33.5973C7.5414 34.4016 8.62236 34.846 9.74415 34.8333H28.9225C30.0443 34.846 31.1252 34.4016 31.9285 33.5973C32.7319 32.793 33.1921 31.6946 33.2083 30.5425V16.9575C33.2071 16.4009 33.0989 15.85 32.8899 15.3365C32.6809 14.823 32.3752 14.3569 31.9904 13.965ZM18.47 6.68166C18.7058 6.46025 19.0138 6.33747 19.3333 6.33747C19.6528 6.33747 19.9608 6.46025 20.1966 6.68166L28.5833 15.0417L20.1504 23.4017C19.9146 23.6231 19.6066 23.7459 19.2871 23.7459C18.9675 23.7459 18.6596 23.6231 18.4237 23.4017L10.0833 15.0417L18.47 6.68166ZM30.125 30.5425C30.1052 30.8533 29.9688 31.144 29.7445 31.3537C29.5203 31.5633 29.2256 31.6755 28.9225 31.6667H9.74415C9.44102 31.6755 9.14636 31.5633 8.9221 31.3537C8.69785 31.144 8.56147 30.8533 8.54165 30.5425V17.9708L14.7854 24.1458L12.2262 26.6792C11.9391 26.9758 11.7779 27.3771 11.7779 27.7954C11.7779 28.2137 11.9391 28.615 12.2262 28.9117C12.3695 29.066 12.5417 29.1891 12.7324 29.2734C12.9232 29.3578 13.1286 29.4017 13.3362 29.4025C13.7332 29.4009 14.1142 29.2421 14.4 28.9592L17.1287 26.2675C17.8065 26.6928 18.5853 26.9179 19.3796 26.9179C20.1738 26.9179 20.9527 26.6928 21.6304 26.2675L24.3591 28.9592C24.6449 29.2421 25.026 29.4009 25.4229 29.4025C25.6306 29.4017 25.8359 29.3578 26.0267 29.2734C26.2174 29.1891 26.3896 29.066 26.5329 28.9117C26.82 28.615 26.9812 28.2137 26.9812 27.7954C26.9812 27.3771 26.82 26.9758 26.5329 26.6792L23.9583 24.1458L30.125 17.9708V30.5425Z" fill="#581ff8"/>
+                            </svg>
+                        </span>
+                        <p class="text-2xl font-extrabold text-dark-grey-900">بريد إلكتروني</p>
+                        <p class="text-base leading-7 text-dark-grey-600">تواصل معنا على</p>
+                        <a class="text-lg font-bold text-purple-blue-500" href = "mailto: hello@loopple.com">hello@loopple.com</a>
+                        </div>
+                        <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                            <path d="M30.4237 20.5833C30.0846 20.5833 29.73 20.4725 29.3908 20.3933C28.7045 20.2357 28.0297 20.0294 27.3712 19.7758C26.656 19.5086 25.8699 19.5225 25.164 19.8148C24.4582 20.1071 23.8826 20.6572 23.5479 21.3592L23.2087 22.0875C21.7115 21.2154 20.3283 20.1513 19.0925 18.9208C17.8944 17.6516 16.8583 16.231 16.0092 14.6933L16.7183 14.3608C17.4018 14.0171 17.9374 13.4259 18.222 12.701C18.5067 11.9761 18.5202 11.1687 18.26 10.4342C18.0151 9.7518 17.8143 9.05363 17.6587 8.34417C17.5817 7.99584 17.52 7.63167 17.4737 7.28334C17.2865 6.16807 16.7177 5.1581 15.8698 4.4353C15.0219 3.7125 13.9506 3.32439 12.8487 3.34084H8.20832C7.55657 3.33996 6.91201 3.48056 6.31687 3.75343C5.72174 4.02629 5.18948 4.42526 4.75498 4.92417C4.31148 5.43662 3.98125 6.04161 3.78698 6.69756C3.59271 7.35351 3.53901 8.04489 3.62957 8.72417C4.4676 15.3142 7.39927 21.4362 11.97 26.1408C16.5508 30.8351 22.5117 33.846 28.9283 34.7067C29.1284 34.7224 29.3294 34.7224 29.5296 34.7067C30.6664 34.7084 31.7641 34.28 32.6129 33.5033C33.0987 33.0571 33.4871 32.5105 33.7528 31.8992C34.0185 31.288 34.1554 30.626 34.1546 29.9567V25.2067C34.1463 24.1126 33.7705 23.0551 33.0907 22.2127C32.411 21.3704 31.4689 20.7948 30.4237 20.5833ZM31.1791 30.0833C31.1786 30.3043 31.1331 30.5227 31.0455 30.7245C30.9579 30.9263 30.8301 31.107 30.6704 31.255C30.5014 31.4131 30.3004 31.5306 30.0817 31.5991C29.8631 31.6676 29.6323 31.6852 29.4062 31.6508C23.6532 30.8792 18.3066 28.1865 14.19 23.9875C10.0698 19.756 7.4252 14.2458 6.66665 8.31251C6.63316 8.08028 6.65037 7.84332 6.71702 7.61877C6.78368 7.39422 6.89813 7.1877 7.05207 7.01417C7.19794 6.84816 7.3764 6.71577 7.57569 6.62571C7.77499 6.53565 7.99059 6.48997 8.20832 6.49167H12.8333C13.1897 6.48273 13.5381 6.6009 13.8192 6.82607C14.1002 7.05124 14.2967 7.3695 14.375 7.72667C14.375 8.15417 14.5137 8.59751 14.6062 9.025C14.7844 9.85446 15.0214 10.6694 15.3154 11.4633L13.1571 12.5083C12.7861 12.6832 12.4978 13.0021 12.3554 13.395C12.2012 13.7805 12.2012 14.2129 12.3554 14.5983C14.5742 19.4794 18.3945 23.4029 23.1471 25.6817C23.5224 25.84 23.9434 25.84 24.3187 25.6817C24.7013 25.5354 25.0118 25.2393 25.1821 24.8583L26.1533 22.6417C26.9487 22.9395 27.7624 23.1828 28.5891 23.37C28.99 23.465 29.4217 23.5442 29.8379 23.6075C30.1857 23.6879 30.4956 23.8897 30.7148 24.1784C30.934 24.467 31.0491 24.8248 31.0404 25.1908L31.1791 30.0833ZM22.0833 3.16667C21.7287 3.16667 21.3587 3.16667 21.0042 3.16667C20.5953 3.20237 20.217 3.40341 19.9524 3.72558C19.6879 4.04776 19.5588 4.46466 19.5935 4.88459C19.6283 5.30451 19.824 5.69306 20.1377 5.96476C20.4514 6.23645 20.8574 6.36903 21.2662 6.33334H22.0833C24.5366 6.33334 26.8893 7.33423 28.6241 9.11582C30.3588 10.8974 31.3333 13.3138 31.3333 15.8333C31.3333 16.1183 31.3333 16.3875 31.3333 16.6725C31.2991 17.0902 31.4276 17.5048 31.6906 17.8253C31.9536 18.1459 32.3296 18.3463 32.7362 18.3825H32.8596C33.2455 18.3841 33.618 18.237 33.9034 17.9702C34.1889 17.7035 34.3665 17.3364 34.4012 16.9417C34.4012 16.5775 34.4012 16.1975 34.4012 15.8333C34.4012 12.4767 33.104 9.25725 30.7943 6.88225C28.4847 4.50724 25.3516 3.17087 22.0833 3.16667ZM25.1667 15.8333C25.1667 16.2533 25.3291 16.656 25.6182 16.9529C25.9073 17.2499 26.2994 17.4167 26.7083 17.4167C27.1172 17.4167 27.5093 17.2499 27.7984 16.9529C28.0876 16.656 28.25 16.2533 28.25 15.8333C28.25 14.1536 27.6003 12.5427 26.4438 11.355C25.2873 10.1673 23.7188 9.50001 22.0833 9.50001C21.6744 9.50001 21.2823 9.66682 20.9932 9.96375C20.7041 10.2607 20.5417 10.6634 20.5417 11.0833C20.5417 11.5033 20.7041 11.906 20.9932 12.2029C21.2823 12.4999 21.6744 12.6667 22.0833 12.6667C22.9011 12.6667 23.6853 13.0003 24.2636 13.5942C24.8418 14.188 25.1667 14.9935 25.1667 15.8333Z" fill="#581ff8"/>
+                            </svg>
+                        </span>
+                        <p class="text-2xl font-extrabold text-dark-grey-900">هاتف</p>
+                        <p class="text-base leading-7 text-dark-grey-600">تواصل معنا عبر الهاتف</p>
+                        <a class="text-lg font-bold text-purple-blue-500" href="tel:+516-486-5135">+516-486-5135</a>
+                        </div>
+                        <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                            <path d="M31.7091 15.2475C31.4927 12.9341 30.6966 10.7177 29.3984 8.81412C28.1003 6.91054 26.3443 5.38464 24.3014 4.38503C22.2585 3.38541 19.9984 2.94614 17.7412 3.10998C15.4839 3.27383 13.3065 4.03522 11.4208 5.32C9.8008 6.43252 8.44083 7.89972 7.43858 9.6162C6.43633 11.3327 5.81667 13.2558 5.62413 15.2475C5.43524 17.2261 5.67758 19.2231 6.33355 21.0936C6.98953 22.9641 8.04269 24.6611 9.41663 26.0617L17.5875 34.4692C17.7308 34.6176 17.9013 34.7354 18.0892 34.8157C18.277 34.8961 18.4785 34.9375 18.682 34.9375C18.8856 34.9375 19.0871 34.8961 19.2749 34.8157C19.4628 34.7354 19.6333 34.6176 19.7766 34.4692L27.9166 26.0617C29.2906 24.6611 30.3437 22.9641 30.9997 21.0936C31.6557 19.2231 31.898 17.2261 31.7091 15.2475ZM25.7583 23.8292L18.6666 31.1125L11.575 23.8292C10.5298 22.7557 9.72928 21.4578 9.23081 20.0288C8.73233 18.5997 8.54834 17.075 8.69204 15.5642C8.83668 14.0301 9.31143 12.5482 10.082 11.2256C10.8525 9.90299 11.8996 8.77278 13.1475 7.91666C14.7831 6.80079 16.703 6.20555 18.6666 6.20555C20.6302 6.20555 22.5502 6.80079 24.1858 7.91666C25.4299 8.76947 26.4747 9.89469 27.245 11.2115C28.0154 12.5283 28.4922 14.0039 28.6412 15.5325C28.7896 17.0484 28.6079 18.5793 28.1093 20.0142C27.6107 21.4491 26.8076 22.7522 25.7583 23.8292ZM18.6666 9.5C17.2945 9.5 15.9532 9.91787 14.8124 10.7008C13.6715 11.4837 12.7823 12.5965 12.2572 13.8984C11.7321 15.2003 11.5947 16.6329 11.8624 18.015C12.1301 19.3971 12.7908 20.6667 13.7611 21.6631C14.7313 22.6596 15.9674 23.3382 17.3132 23.6131C18.6589 23.888 20.0538 23.7469 21.3215 23.2076C22.5892 22.6684 23.6726 21.7551 24.4349 20.5834C25.1972 19.4117 25.6041 18.0342 25.6041 16.625C25.6001 14.7366 24.8678 12.9268 23.5677 11.5915C22.2675 10.2562 20.5053 9.50418 18.6666 9.5ZM18.6666 20.5833C17.9043 20.5833 17.1592 20.3512 16.5254 19.9162C15.8916 19.4813 15.3976 18.8631 15.1058 18.1398C14.8141 17.4165 14.7378 16.6206 14.8865 15.8528C15.0352 15.0849 15.4023 14.3796 15.9413 13.826C16.4803 13.2724 17.1671 12.8955 17.9147 12.7427C18.6623 12.59 19.4373 12.6684 20.1416 12.968C20.8458 13.2676 21.4477 13.7749 21.8712 14.4259C22.2947 15.0768 22.5208 15.8421 22.5208 16.625C22.5208 17.6748 22.1147 18.6816 21.3919 19.424C20.6691 20.1663 19.6888 20.5833 18.6666 20.5833Z" fill="#581ff8"/>
+                            </svg>
+                        </span>
+                        <p class="text-2xl font-extrabold text-dark-grey-900">موقع</p>
+                        <p class="text-base leading-7 text-dark-grey-600">تجدنا في مكتبنا</p>
+                        <a class="text-lg font-bold text-purple-blue-500" target="_blank" href="https://goo.gl/maps/QcWzYETAh4FS3KTD7">  السعودية</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+</div>
+    <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800   border border-t-gray-200">
+
+        <div class="sm:flex sm:items-center sm:justify-between max-w-screen-xl">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                كل الحقوق محفوظة 2023 ©
+            </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0 " dir="ltr">
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+
+            allowTouchMove: true,
+
+            slidesPerView: "auto",
+
+            speed: 3000,
+            loop: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            },
+
+            freeMode: true,
+            spaceBetween: 0,
+            centeredSlides: true
+        });
+
+
+        document.querySelector(".mySwiper").addEventListener("mouseover", (e) => {
+            // #FIXME
+            console.log("hi");
+            swiper.autoplay.pause();
+        });
+
+    // swiper.on("mouseover", function () {
+    // 	console.log("hi");
+    // });
+
+    </script>
+
+
+</body>
+
+</html>
